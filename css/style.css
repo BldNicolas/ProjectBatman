@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* variables */
+:root{
+    --color-default: #222;
+    --color-main: #e9e9e9;
+    --color-text-header: #fff;
+}
+
+/* reset css */
+html{
+    font-size: 62.5%;
+    background: url("/Dev/Html/projet_batman/asset/batman_bg.png") no-repeat fixed center center / cover;
+    background-attachment: fixed;
+}
+body{
+    font: 1.6rem "Montserrat", sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+}
+h1,h2,h3,p,ul,figure{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 300;
+}
+*{
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #000000 #ffffff;
+}
+*::-webkit-scrollbar{
+    width: .4rem;
+}
+details,summary{
+    outline: solid .1rem transparent;
+}
+
+/* Custom */
+header{
+    line-height: 8rem;
+    background-color: var(--color-default);
+    margin-bottom: 5rem;
+}
+header img{
+    display: inline-block;
+    transform: scale(.2);
+}
+header h1{
+    color: var(--color-text-header);
+    text-align: center;
+}
+
+main{
+    max-width: 80rem;
+    margin: 0 auto;
+    border: solid .1rem transparent;
+    padding: 1rem;
+    box-shadow: 0 0 1.9rem #000000;
+}
+figure, main{
+    background-color: #ffffff;
+}
+figure img{
+    display: block;
+    max-width: 100%;
+}
+figure figcaption h2, figure figcaption ul li, figure figcaption details{
+    padding: 1rem;
+}
+figure figcaption ul li:nth-child(2n + 2), figure figcaption details{
+    background-color: var(--color-main);
+}
+details summary{ 
+	list-style-type: none;
+	cursor: pointer;
+}
+details summary::-webkit-details-marker{
+	display: none;
+}
+details summary::before{
+	display: inline-block;
+	content: "+";
+	color: #222;
+	font-size: 3rem;
+    vertical-align: -.3rem;
+	font-weight: bolder;
+	margin-right: .5rem;
+	transform: rotate(0deg);
+	transition-duration: .5s;
+}
+details[open] summary::before{
+    content: "-";
+    transform: rotate(360deg);
+}
+figure details p{
+    margin-top: 2rem;
+    line-height: 2.5rem;
+    text-align: justify;
+}
+footer{
+    padding: 1.6rem;
+    text-align: center;
+    color: var(--color-text-header);
+}
