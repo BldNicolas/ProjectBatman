@@ -10,7 +10,7 @@
 /* reset css */
 html{
     font-size: 62.5%;
-    background: url("/Dev/Html/Batman_project/asset/batman_bg.png") no-repeat fixed center center / cover;
+    background: url("/asset/batman_bg.png") no-repeat fixed center center / cover;
     background-attachment: fixed;
 }
 body{
